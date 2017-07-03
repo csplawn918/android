@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="dropMenu">
+        <item>공지사항</item>
+        <item>PHP</item>
+        <item>DB</item>
+        <item>JSP</item>
+    </string-array>
+</resources>
