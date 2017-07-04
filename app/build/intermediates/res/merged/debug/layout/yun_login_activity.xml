@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/colorPrimary"
+        android:text="개발자 정보 사이트"
+        android:textAlignment="center"
+        tools:background="@android:color/darker_gray" />
+
+    <EditText
+        android:id="@+id/yun.login.EditEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:layout_alignBaseline="@+id/yun.login.TextView2"
+        android:layout_alignBottom="@+id/yun.login.TextView2"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/yun.login.TextView3" />
+
+    <EditText
+        android:id="@+id/yun.login.EditPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:layout_above="@+id/yun.login.LoginBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="27dp"
+        android:layout_toEndOf="@+id/yun.login.TextView3" />
+
+    <Button
+        android:id="@+id/yun.login.LoginBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickLogin"
+        android:text="로그인"
+        android:layout_above="@+id/yun.login.RegisterBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:id="@+id/yun.login.RegisterBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickRegister"
+        android:text="회원가입"
+        android:layout_above="@+id/yun.login.DBInfoBtn"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <TextView
+        android:id="@+id/yun.login.TextView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="아이디:"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_above="@+id/yun.login.EditPw"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="42dp" />
+
+    <TextView
+        android:id="@+id/yun.login.TextView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="비밀번호:"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:layout_alignBaseline="@+id/yun.login.EditPw"
+        android:layout_alignBottom="@+id/yun.login.EditPw"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:id="@+id/yun.login.DBInfoBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="onClickDBInfo"
+        android:text="데이터베이스정보"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        app:srcCompat="@drawable/logo"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/imageView5" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/spinner"
+        android:layout_below="@+id/imageView5"
+        android:layout_toStartOf="@+id/yun.login.EditEmail"
+        android:text="Home"
+        android:textSize="30dp" />
+
+</RelativeLayout>

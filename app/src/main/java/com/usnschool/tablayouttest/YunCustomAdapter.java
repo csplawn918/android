@@ -42,8 +42,7 @@ public class YunCustomAdapter extends BaseAdapter{
 
     @Override
     public View getView(int i, View convertView, ViewGroup parent) {
-        final int position = i;
-        final View con=convertView;
+        int position = i;
 
         if(convertView==null){
             convertView = layoutInflater.inflate(layout,parent,false);
